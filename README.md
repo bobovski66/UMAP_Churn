@@ -36,14 +36,15 @@ We use the [Telco Customer Churn Dataset](https://www.kaggle.com/datasets/blastc
 ### 🔢 Churn Risk Score
 We define a soft risk score:
 
-\[ R = \alpha H + \beta (1 - S) + \gamma C \]
+**R = α·H + β·(1 - S) + γ·C**
 
 Where:
-- \( H \): Normalized entropy
-- \( S \): HDBSCAN membership strength
-- \( C \): Cluster-level churn rate
+- **H**: Normalized entropy
+- **S**: HDBSCAN membership strength
+- **C**: Cluster-level churn rate
 
 Customers in the top 5% of this score were flagged as **high risk**.
+
 
 ---
 
